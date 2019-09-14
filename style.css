@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*=====初期化=====*/
+button, input, select, textarea {
+	font-family : inherit;
+	font-size : 100%;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+}
+li{
+	list-style-type: none;
+	list-style-position: outside;
+}
+body{
+	padding:10px;
+	font-family:Arial, sans-serif;
+	min-width: 800px;
+	max-width: 900px;
+	margin:0 auto;
+	box-sizing: border-box;
+	font-family: "游ゴシック体", YuGothic, "YuGothic M", sans-serif;
+}
+a{
+	text-decoration: none;
+	display: block;
+}
+a, a:visited {
+  color : #0000ff;
+}
+a:hover{
+	color : #006eff;
+	text-decoration: underline;
+	text-decoration-color: red;
+}
+/* table */
+table{
+	margin:0px 10px;
+	border-collapse: collapse;
+	text-align: left;
+	vertical-align: middle;
+	min-width: 500px;
+}
+th,td{
+	padding:5px 10px;
+	font-size:1em;
+	min-width: 100px;
+}
+th{
+	font-weight: normal;
+}
+
+/* button */
+button{
+	border:solid 2px #b0c4de;
+	padding:5px 45px;
+	margin:5px 0 5px;
+	font-size:1.1em;
+	color:#333;
+	cursor:pointer;
+	background-color: #f0f8ff;
+	border-radius: 4px;
+	min-width:10vh;
+}
+button:hover {
+  background-color: #b0c4de;
+	color: #222;
+	border:solid 2px #2c79de;
+}
+
+/* radio */
+input[type="radio"] {
+	display: none; 
+}
+input[type="radio"]:checked + label {
+	background: #C0E8FF;
+	color: #333333;
+	border: 2px solid #28A7E1;
+}
+label {
+	display: block;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	padding: 0 10px;
+	cursor: pointer;
+	color: #333333;
+	border: 2px solid #c3cedb;
+	border-radius: 5px;
+	background: #EEFECD;
+	transition: 0.5s;
+}
+
+/* check */
+input[type="checkbox"] {
+	display: none; 
+}
+input[type="checkbox"]:checked + label {
+	background: #C0E8FF;
+	color: #333333;
+	border: 2px solid #28A7E1; 
+}
+label:hover {
+	background-color: #E2EDF9;
+	border: 2px solid #b0c4de;
+}
+
+/* errmsg */
+.err{
+	font-size:1em;
+	color:red;
+}
+td .err{
+	font-size:0.8em;
+	position: relative;
+	top:5px;
+}
+
+/* text */
+input[type="text"] ,input[type="password"] ,select,textarea{
+	padding:5px;
+	font-size:1.1em;
+	border:solid 1px #ccc;
+}
+input[type="file"]{
+	font-size:1em;
+}
+
+/* 横並びぼたん */
+.flexul li{
+	display: inline;
+	margin:5px;
+}
+
+#formtable{
+	border-bottom: solid 2px #84ade2;
+	padding-bottom:5px; 
+	margin-bottom:5px;
+}
+form{
+	margin-bottom:10px;
+}
+p{
+	font-size:1em;
+	margin-right:1em;
+}
+
+.msgbox{
+	margin-left:5px;
+	margin-bottom:15px;
+}
+.remsgbox{
+	margin-left:30px;
+	margin-bottom:15px;
+}
+.head{
+	margin-bottom:10px;
+	display: flex;  
+	padding-right:5px;
+}
+.thread{
+	border:solid 5px #C0E8FF;
+	padding:20px;
+	margin-bottom:10px;
+	border-radius: 10px;
+}
+
+img{
+	max-height:250px;
+}
+.msgbox p:first-child{
+	font-size:1.1em;
+	font-weight:10px;
+	color:rgb(7, 164, 255);
+}
+.remsgbox p:first-child{
+	font-size:1.1em;
+	font-weight:10px;
+	color:rgb(105, 199, 253);
+}
+.msg{
+	margin-left:28px;
+}
+span img{
+	margin-left:28px;
+	margin-top:10px;
+}
+
+.image img{
+	border:solid 3px rgb(143, 214, 255);
+	border-radius: 50px;
+}
+.image{
+	text-align: center;
+}
